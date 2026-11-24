@@ -1,0 +1,1 @@
+package com.medicaps.sms.repository; import com.medicaps.sms.model.Fee; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface FeeRepository extends JpaRepository<Fee,Long>{Optional<Fee> findByStudentId(String studentId);}

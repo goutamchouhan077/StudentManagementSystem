@@ -1,0 +1,1 @@
+package com.medicaps.sms.repository; import com.medicaps.sms.model.Mark; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface MarkRepository extends JpaRepository<Mark,Long> {List<Mark> findByStudentId(String studentId);}

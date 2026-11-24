@@ -1,0 +1,1 @@
+package com.medicaps.sms.repository; import com.medicaps.sms.model.Course; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface CourseRepository extends JpaRepository<Course,Long> {}

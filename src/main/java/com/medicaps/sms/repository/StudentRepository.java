@@ -1,0 +1,1 @@
+package com.medicaps.sms.repository; import com.medicaps.sms.model.Student; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface StudentRepository extends JpaRepository<Student,Long> {Optional<Student> findByStudentId(String studentId); List<Student> findByFullNameContainingIgnoreCase(String name);}

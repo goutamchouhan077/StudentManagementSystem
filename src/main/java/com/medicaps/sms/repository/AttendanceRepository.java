@@ -1,0 +1,1 @@
+package com.medicaps.sms.repository; import com.medicaps.sms.model.Attendance; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; import java.time.*; public interface AttendanceRepository extends JpaRepository<Attendance,Long> {List<Attendance> findByStudentId(String studentId); List<Attendance> findByAttendanceDate(LocalDate date);}
